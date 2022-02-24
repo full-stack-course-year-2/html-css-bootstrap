@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Kursiyer Adı Yazılacak</title>
+      <meta charset="UTF-8" />
+    </head>
+    <body>
+      <form action="" method="post" autocomplete="off" style="text-align: center;">
+          <fieldset style="background-color: purple">
+            <legend style="color:blue;text-align:center;font-size:30px;font-weight:bold">Kayıt Formu</legend>
+            <fieldset style="background-color: blue">
+              <legend style="color:yellow;text-align:center;font-size:20px;font-weight:bold">Öğrenci Bilgileri</legend>
+              <label for="fname" style="color:white">Ad :</label><br>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname" style="color:white">Soyad :</label><br>
+              <input type="text" id="lname" name="lname"><br><br>
+              <label for="email" style="color:white">E-Posta :</label><br>
+              <input type="email" id="email" name="email"><br><br>
+              <label for="birthdate" style="color:white">Doğum Tarihi:</label><br>
+              <input type="date" id="birthdate" name="birthdate" ><br><br>
+              <label for="maleOrfemale" style="color:white">Cinsiyet :</label><br>
+              <input type="radio" id="male" name="maleOrfemale" value="Bay">
+              <label for="male" style="color:white">Bay</label>
+              <input type="radio" id="female" name="maleOrfemale" value="Bayan">
+              <label for="female" style="color:white">Bayan</label><br>
+            </fieldset>
+            <fieldset>
+              <legend style="color:yellow;text-align:center;font-size:20px;font-weight:bold">Bölüm Bilgileri</legend>
+              <!-- <table style="border-style:double; border-width: 3px;" align="center"> -->
+              <table style="border:3px double white" align="center" >
+                <tr>
+                  <th>Mühendislik Fakültesi</th>
+                  <th>Fen/Edebiyat Fakültesi</th>
+                  <th>İşletme Fakültesi</th>
+                </tr>
+                <tr>
+                  <td>
+                    <select id="muhendislik" name="muhendislik" size="1">
+                      <option value="">-------------------------------------------</option>
+                      <option value="bilgisayar">Bilgisayar Mühendisliği</option>
+                      <option value="elektrik-elektronik">Elektrik-Elektronik Mühendisliği</option>
+                      <option value="makina">Makina Mühendisliği</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select id="fenEdebiyat" name="fenEdebiyat" size="1">
+                      <option value="">-------------------------------------------</option>
+                      <option value="fen">Fen Bilgisi Öğretmenliği</option>
+                      <option value="kimya">Kimya Öğretmenliği</option>
+                      <option value="turkce">Türkçe Öğretmenliği</option>
+                    </select>                    
+                  </td>
+                  <td>
+                    <select id="isletme" name="isletme" size="1">
+                      <option value="">-------------------------------------------</option>
+                      <option value="isletme">İşletme</option>
+                      <option value="iktisat">İktisat</option>
+                      <option value="ekonomi">Ekonomi</option>
+                    </select>                     
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </fieldset>
+          <br>
+          <input type="submit" value="Kaydet">    
+      </form>
+    </body>
+</html>
